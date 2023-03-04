@@ -2,7 +2,7 @@ local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifMo
 Send2.Notify("Filipino Scripter Number 1 | 🇵🇭")
 Send2.Notify("Filipino Scripter Number 1 | 🇵🇭")
 Send2.Notify("Filipino Scripter Number 1 | 🇵🇭")
-Send2.Notify("Filipino Scripter Number 1 | 🇵🇭")
+Send2.Notify("SW Hub is Dead")
         local ui = game.CoreGui:FindFirstChild("UlLib")
         if ui then
             ui:Destroy()
@@ -1530,6 +1530,7 @@ local AS = CNRUI:AddTab("About Script","7733960981")
 local AT = CNRUI:AddTab("Auto Train","7733955740")
 local ASS = CNRUI:AddTab("Auto Stats","8997387110")
 local IS = CNRUI:AddTab("Infinite Spin","7743870134")
+local CM = CNRUI:AddTab("Player Menu","7743871002")
 local TD = CNRUI:AddTab("Teleport Dims","7733673056")
 local FG = CNRUI:AddTab("Free Gamepass","7734068495")
 local CA = CNRUI:AddTab("Chakra Area","7733798747")
@@ -1538,62 +1539,6 @@ local CR = CNRUI:AddTab("Chikara Reducer","7733967892")
 local CRd = CNRUI:AddTab("Teleport Shop","7734053426")
 local CRs = CNRUI:AddTab("Other Menu","7743870286")
 ------------------------------------------------------------------
----
-JACK:AddSeperator("Auto Specials")
----
-JACK:AddToggle("Auto Arnament",false,function(value)
-if value == true then
-_G.loopssss = true
-while wait(5) do
-if _G.loopssss == true then
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-local A_1 = "SOb"
-local A_2 = "Arnament"
-local Event = game:GetService("ReplicatedStorage").RSPackage.Events.GeneralFunction
-Event:InvokeServer(A_1, A_2)
-Notif.Notify("New Arnament :".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Specials.Container.Buttons.Arnament.Frame.ArnamentName.Text)
-end
-end
-else
-_G.loopssss = false
-end
-end)
----
-JACK:AddToggle("Auto Nen",false,function(value)
-if value == true then
-_G.loopsssss = true
-while wait(5) do
-if _G.loopsssss == true then
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-local A_1 = "SOb"
-local A_2 = "Nen"
-local Event = game:GetService("ReplicatedStorage").RSPackage.Events.GeneralFunction
-Event:InvokeServer(A_1, A_2)
-Notif.Notify("New Nen :".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Specials.Container.Buttons.Nen.Frame.NenName.Text)
-end
-end
-else
-_G.loopsssss = false
-end
-end)
----
-JACK:AddToggle("Auto Bloodlines",false,function(value)
-if value == true then
-_G.loopssssss = true
-while wait(5) do
-if _G.loopssssss == true then
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-local A_1 = "SOb"
-local A_2 = "Bloodlines"
-local Event = game:GetService("ReplicatedStorage").RSPackage.Events.GeneralFunction
-Event:InvokeServer(A_1, A_2)
-Notif.Notify("New Bloodline :".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Specials.Container.Buttons.Bloodlines.Frame.BloodlinesName.Text)
-end
-end
-else
-_G.loopssssss = false
-end
-end)
 ---
 VM:AddSeperator("Visual Total Power")
 VM:AddButton('999.99Ggp',function()
@@ -2375,55 +2320,10 @@ game:GetService("Players").LocalPlayer.NameDisplayDistance = 1000000000000000000
 end)
 ---
 CM:AddSeperator("OP Section")
-CM:AddLabel("Only SW Hub Member only Use This:")
+CM:AddLabel("DM [CNR]HeyyyRappp.#1118 for Godmode:")
 CM:AddToggle("God Mode",false,function(value1)
-if value1 == true then
 local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-Notif.Notify("God On")
-local a = game:GetService("Players"):GetChildren()
-for i = 1,#a do
-if game:GetService("Workspace")[a[i].Name].HumanoidRootPart then
-game:GetService("Workspace")[a[i].Name].HumanoidRootPart.HitParticle:Destroy()
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextColor3 = Color3.fromRGB(0,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextStrokeColor3 = Color3.fromRGB(170,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone:GetChildren()[3].ImageColor3 = Color3.fromRGB(255,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.Text = "Unkillable"
-local i = 0
-while true do
-i = i + 1
-if i >=10 then
-game:GetService("RunService").RenderStepped:Wait()
-i = 0
-end
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.Visible = true
-end
-end
-end
-else
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-Notif.Notify("God Off")
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextStrokeColor3 = Color3.fromRGB(0,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone:GetChildren()[3].ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.Text = "Killable"
-local Player = game.Players.LocalPlayer
-local Character = Player.Character
-local Humanoid = Character.Humanoid
-Humanoid.Health = 0
-end
-end)
----
-CM:AddLabel("Click Again if you Died or Reset")
-CM:AddButton("Hide Ultimate Shield",function()
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-Notif.Notify("Shield Hidden")
-local a = game:GetService("Players"):GetChildren()
-for i = 1,#a do
-game:GetService("Workspace")[a[i].Name].MetalBody_Folder:Destroy()
-end
+Notif.Notify("GAY GAY GAY GAY GAY GAY GAY GAY GAY GAYA GAY NIGGA")
 end)
 ---
 CM:AddSeperator("Show Player TP")
