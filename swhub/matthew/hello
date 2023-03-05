@@ -1,0 +1,48 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "God Mode", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+local Tab = Window:MakeTab({
+	Name = "Godmode",
+	Icon = "tite",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Plot Armor",
+	Callback = function()
+	---
+local a = game:GetService("Players"):GetChildren()
+for i = 1,#a do
+if game:GetService("Workspace")[a[i].Name].HumanoidRootPart then
+game:GetService("Workspace")[a[i].Name].HumanoidRootPart.HitParticle:Destroy()
+game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,0,0)
+game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone:GetChildren()[3].ImageColor3 = Color3.fromRGB(255,0,0)
+game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.Text = "Plot Armor"
+local i = 0
+while true do
+i = i + 1
+if i >=10 then
+game:GetService("RunService").RenderStepped:Wait()
+i = 0
+end
+game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.Visible = true
+end
+end
+end
+    ---
+      		print("button pressed")
+  	end    
+})
+Tab:AddButton({
+	Name = "Hide Shield",
+	Callback = function()
+	---
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Shield Hidden")
+local a = game:GetService("Players"):GetChildren()
+for i = 1,#a do
+game:GetService("Workspace")[a[i].Name].MetalBody_Folder:Destroy()
+end
+    ---
+      		print("button pressed")
+  	end    
+})
