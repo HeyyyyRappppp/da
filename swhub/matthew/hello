@@ -63,7 +63,7 @@ local Send = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.StatModu
 for i=1,2 do
 coroutine.wrap(function()
 coroutine.wrap(function()
-for i = 1,300 do 
+for i = 1,4 do 
 task.spawn(function()
 Send.SendToServer("Chakra")
 end)
