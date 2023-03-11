@@ -1,6 +1,5 @@
-local ID = 1257593609 or 3735123100
-
-if game:GetService("Players").LocalPlayer.UserId == ID then
+local PlaceId = game:GetService("Players").LocalPlayer.UserId
+if PlaceId == 956694789 or PlaceId == 3735123100 or PlaceId == 1257593609 or PlaceId == 1 then
 game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
 else
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
@@ -4312,4 +4311,5 @@ end
 end
 end
 --- TEST
+
 end
