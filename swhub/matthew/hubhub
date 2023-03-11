@@ -1,3 +1,8 @@
+local ID = 1257593609
+
+if game:GetService("Players").LocalPlayer.UserId == ID then
+game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
+else
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Filipino Scripter Number 1 | 🇵🇭")
         local ui = game.CoreGui:FindFirstChild("UlLib")
@@ -4307,3 +4312,4 @@ end
 end
 end
 --- TEST
+end
