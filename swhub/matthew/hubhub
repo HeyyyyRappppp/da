@@ -1,4 +1,4 @@
-local ID = 1257593609
+local ID = 1257593609 or 3817604983
 
 if game:GetService("Players").LocalPlayer.UserId == ID then
 game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
