@@ -2889,50 +2889,8 @@ game:GetService("Players").LocalPlayer.NameDisplayDistance = 1000000000000000000
 end)
 ---
 CM:AddSeperator("OP Section")
-CM:AddLabel("Sexy God Mode --:")
-CM:AddToggle("God Mode",false,function(value1)
-if value1 == true then
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-Notif.Notify("God On")
-local A_1 = "God SW Hub"
-local A_2 = "All"
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(A_1, A_2)
-local a = game:GetService("Players"):GetChildren()
-for i = 1,#a do
-if game:GetService("Workspace")[a[i].Name].HumanoidRootPart then
-game:GetService("Workspace")[a[i].Name].HumanoidRootPart.HitParticle:Destroy()
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextColor3 = Color3.fromRGB(0,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextStrokeColor3 = Color3.fromRGB(170,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone:GetChildren()[3].ImageColor3 = Color3.fromRGB(255,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.Text = "Unkillable"
-local i = 0
-while true do
-i = i + 1
-if i >=10 then
-game:GetService("RunService").RenderStepped:Wait()
-i = 0
-end
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.Visible = true
-end
-end
-end
-else
-local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
-Notif.Notify("God Off")
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.TextStrokeColor3 = Color3.fromRGB(0,0,0)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.ImageLabel.ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone:GetChildren()[3].ImageColor3 = Color3.fromRGB(255,255,255)
-game:GetService("Players")["LocalPlayer"].PlayerGui.Main.SafeZone.TextLabel.Text = "Killable"
-local Player = game.Players.LocalPlayer
-local Character = Player.Character
-local Humanoid = Character.Humanoid
-Humanoid.Health = 0
-end
-end)
+CM:AddLabel("Not Available:")
+
 ---
 CM:AddLabel("Click Again if you Died or Reset")
 CM:AddButton("Hide Ultimate Shield",function()
