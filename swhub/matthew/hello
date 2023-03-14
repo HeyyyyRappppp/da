@@ -1,3 +1,227 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "You consider me as an enemy right so create ur own godmode;-;", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+repeat wait() until game:IsLoaded()
+local PlaceId = game.PlaceId
+if PlaceId == 4042427666 or PlaceId == 5113678354 or PlaceId == 5113680396 or PlaceId == 5445525505 then
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+wait()
+local lp = game:GetService"Players".LocalPlayer
+local saved
+lp.Character.Humanoid.Died:Connect(function()
+saved = lp.Character.HumanoidRootPart.CFrame
+end)
+lp.CharacterAdded:Connect(function(char)
+char:WaitForChild"Humanoid"; char:WaitForChild"HumanoidRootPart"
+if saved then lp.Character.HumanoidRootPart.CFrame = saved end
+char.Humanoid.Died:Connect(function()
+saved = lp.Character.HumanoidRootPart.CFrame
+end)
+end)
+wait()
+local PlaceId = game:GetService("Players").LocalPlayer.UserId
+if PlaceId == 4367365016 then
+local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Send2.Notify("Checking....")
+wait(3)
+Send2.Notify("Checking....")
+wait(2)
+Send2.Notify("Checking....")
+wait(1)
+Send2.Notify("Success Login: ConcealTest")
+wait(5)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Bracket-V2/main/src.lua"))()
 
+
+local Window, MainGUI = Library:CreateWindow("SW Hub | TEST PREMIUM")
+
+
+local Tab1 = Window:CreateTab("Main")
+
+local Groupbox1 = Tab1:CreateGroupbox("Auto Massive Chakra only in Dim 5", "Left")
+local Groupbox2 = Tab1:CreateGroupbox("Join to Dimension 5", "Left")
+local ExampleButton = Groupbox2:CreateButton("Join", function()
+game:GetService("TeleportService"):Teleport(6479720355,game:GetService("Players").LocalPlayer)
+end)
+---
+
+---
+local ExampleButton = Groupbox1:CreateButton("Massive Chakra", function()
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Current Chakra: ".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Stats.Container.Stats.Chakra.Current.Stat.Text)
+local Send = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.StatModuleClient)
+for i=1,2 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,700 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+wait(1)
+workspace[game.Players.LocalPlayer.Name]:Destroy()
+wait(1)
+for i=1,3 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,600 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+end)
+---
+local ExampleButton = Groupbox1:CreateButton("God", function()
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("God Active")
+workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.HitParticle:Destroy()
+end)
+else
+game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
+end
+elseif PlaceId == 6479720355 then
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+wait()
+local lp = game:GetService"Players".LocalPlayer
+local saved
+lp.Character.Humanoid.Died:Connect(function()
+saved = lp.Character.HumanoidRootPart.CFrame
+end)
+lp.CharacterAdded:Connect(function(char)
+char:WaitForChild"Humanoid"; char:WaitForChild"HumanoidRootPart"
+if saved then lp.Character.HumanoidRootPart.CFrame = saved end
+char.Humanoid.Died:Connect(function()
+saved = lp.Character.HumanoidRootPart.CFrame
+end)
+end)
+wait()
+local PlaceId = game:GetService("Players").LocalPlayer.UserId
+if PlaceId == 4367365016 then
+local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Send2.Notify("Checking....")
+wait(3)
+Send2.Notify("Checking....")
+wait(2)
+Send2.Notify("Checking....")
+wait(1)
+Send2.Notify("Success Login: ConcealTest")
+wait(5)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Bracket-V2/main/src.lua"))()
+
+
+local Window, MainGUI = Library:CreateWindow("SW Hub | TEST PREMIUM")
+
+
+local Tab1 = Window:CreateTab("Main")
+
+local Groupbox1 = Tab1:CreateGroupbox("Auto Massive Chakra only in Dim 5", "Left")
+local Groupbox2 = Tab1:CreateGroupbox("Server Hop to Dimension 5", "Left")
+local ExampleButton = Groupbox2:CreateButton("Hop", function()
+game:GetService("TeleportService"):Teleport(6479720355,game:GetService("Players").LocalPlayer)
+end)
+---
+local ExampleToggle2 = Groupbox1:CreateToggle("Auto Massive Chakra(DIM 5)", function(state)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.779602, -311.512634, 613.309143, -0.151631951, 8.70668089e-08, 0.988436997, 2.0647688e-08, 1, -8.49178647e-08, -0.988436997, 7.53267759e-09, -0.151631951)
+workspace[game.Players.LocalPlayer.Name].Humanoid.Healh = "0"
+wait(2)
+if state then
+_G.loop = true
+while _G.loop == true do wait(20)
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Current Chakra: ".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Stats.Container.Stats.Chakra.Current.Stat.Text)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.779602, -311.512634, 613.309143, -0.151631951, 8.70668089e-08, 0.988436997, 2.0647688e-08, 1, -8.49178647e-08, -0.988436997, 7.53267759e-09, -0.151631951)
+local Send = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.StatModuleClient)
+for i=1,2 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,700 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+wait(1)
+workspace[game.Players.LocalPlayer.Name]:Destroy()
+wait(1)
+for i=1,3 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,600 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+end
+else
+while _G.loop == true do wait()
+_G.loop = false
+end
+end
+end)
+---
+local ExampleButton = Groupbox1:CreateButton("Massive Chakra", function()
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Current Chakra: ".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Stats.Container.Stats.Chakra.Current.Stat.Text)
+local Send = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.StatModuleClient)
+for i=1,2 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,700 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+wait(1)
+workspace[game.Players.LocalPlayer.Name]:Destroy()
+wait(1)
+for i=1,3 do
+coroutine.wrap(function()
+coroutine.wrap(function()
+for i = 1,600 do 
+task.spawn(function()
+Send.SendToServer("Chakra")
+end)
+end
+end)()
+end)()
+wait(.5)
+end
+end)
+---
+local ExampleButton = Groupbox1:CreateButton("God", function()
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("God Active")
+workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.HitParticle:Destroy()
+end)
+else
+game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
+end
+else
+game.Players.LocalPlayer:Kick("Not Supported.")
+end
