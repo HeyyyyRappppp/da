@@ -22,7 +22,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -30,7 +30,7 @@ Send2.Notify("Checking....")
 wait(2)
 Send2.Notify("Checking....")
 wait(1)
-Send2.Notify("Success Login: ConcealTest")
+Send2.Notify("Login as :".." "..workspace[game.Players.LocalPlayer.Name].Humanoid.DisplayName)
 wait(5)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Bracket-V2/main/src.lua"))()
 
@@ -115,7 +115,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -123,7 +123,8 @@ Send2.Notify("Checking....")
 wait(2)
 Send2.Notify("Checking....")
 wait(1)
-Send2.Notify("Success Login: ConcealTest")
+local Player = game.Players.LocalPlayer
+Send2.Notify("Login as :".." "..Player.Name)
 wait(5)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/WetCheezit/Bracket-V2/main/src.lua"))()
 
@@ -238,3 +239,4 @@ end
 else
 game.Players.LocalPlayer:Kick("Not Supported.")
 end
+----
