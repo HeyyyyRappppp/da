@@ -115,7 +115,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 PlaceId == 1363040454 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -162,7 +162,7 @@ local Send = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.StatModu
 for i=1,2 do
 coroutine.wrap(function()
 coroutine.wrap(function()
-for i = 1,2000 do 
+for i = 1,900 do 
 task.spawn(function()
 Send.SendToServer("Chakra")
 end)
