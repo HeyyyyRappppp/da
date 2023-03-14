@@ -22,7 +22,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -91,7 +91,7 @@ Notif.Notify("God Active")
 workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.HitParticle:Destroy()
 end)
 else
-game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
+game.Players.LocalPlayer:Kick("Please Purchase the Script")
 end
 elseif PlaceId == 6479720355 then
 local vu = game:GetService("VirtualUser")
@@ -115,7 +115,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -233,7 +233,7 @@ Notif.Notify("God Active")
 workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.HitParticle:Destroy()
 end)
 else
-game.Players.LocalPlayer:Kick("You are Banned from SW Hub")
+game.Players.LocalPlayer:Kick("Please Purchase the Script")
 end
 else
 game.Players.LocalPlayer:Kick("Not Supported.")
