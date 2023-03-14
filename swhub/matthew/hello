@@ -22,7 +22,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 or PlaceId == 1 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 or PlaceId == 2475567051 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
@@ -115,7 +115,7 @@ end)
 end)
 wait()
 local PlaceId = game:GetService("Players").LocalPlayer.UserId
-if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 or PlaceId == 1 then
+if PlaceId == 4367365016 or PlaceId == 1183478560 or PlaceId == 3386382784 or PlaceId == 1363040454 or PlaceId == 2000492806 or PlaceId == 956694789 or PlaceId == 2475567051 then
 local Send2 = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Send2.Notify("Checking....")
 wait(3)
