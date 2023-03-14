@@ -42,6 +42,10 @@ local Tab1 = Window:CreateTab("Main")
 
 local Groupbox1 = Tab1:CreateGroupbox("Auto Massive Chakra only in Dim 5", "Left")
 local Groupbox2 = Tab1:CreateGroupbox("Join to Dimension 5", "Left")
+local Groupbox3 = Tab1:CreateGroupbox("Destroy UI", "Right")
+local ExampleButton = Groupbox3:CreateButton("Destroy", function()
+game:GetService("CoreGui")["SW Hub | TEST PREMIUM"]:Destroy()
+end)
 local ExampleButton = Groupbox2:CreateButton("Join", function()
 game:GetService("TeleportService"):Teleport(6479720355,game:GetService("Players").LocalPlayer)
 end)
@@ -131,17 +135,26 @@ local Tab1 = Window:CreateTab("Main")
 
 local Groupbox1 = Tab1:CreateGroupbox("Auto Massive Chakra only in Dim 5", "Left")
 local Groupbox2 = Tab1:CreateGroupbox("Server Hop to Dimension 5", "Left")
+local Groupbox3 = Tab1:CreateGroupbox("Misc", "Right")
+local ExampleButton = Groupbox3:CreateButton("100UD Spawn Point", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.779602, -311.512634, 613.309143, -0.151631951, 8.70668089e-08, 0.988436997, 2.0647688e-08, 1, -8.49178647e-08, -0.988436997, 7.53267759e-09, -0.151631951)
+workspace[game.Players.LocalPlayer.Name].Humanoid.Health = "-1"
+end)
+local ExampleButton = Groupbox3:CreateButton("Destroy", function()
+game:GetService("CoreGui")["SW Hub | TEST PREMIUM"]:Destroy()
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Thanks for Purchasing!")
+end)
 local ExampleButton = Groupbox2:CreateButton("Hop", function()
 game:GetService("TeleportService"):Teleport(6479720355,game:GetService("Players").LocalPlayer)
 end)
 ---
 local ExampleToggle2 = Groupbox1:CreateToggle("Auto Massive Chakra(DIM 5)", function(state)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.779602, -311.512634, 613.309143, -0.151631951, 8.70668089e-08, 0.988436997, 2.0647688e-08, 1, -8.49178647e-08, -0.988436997, 7.53267759e-09, -0.151631951)
-workspace[game.Players.LocalPlayer.Name].Humanoid.Healh = "0"
-wait(2)
+local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
+Notif.Notify("Wait 20 Seconds")
 if state then
-_G.loop = true
-while _G.loop == true do wait(20)
+_G.loop1 = true
+while _G.loop1 == true do wait(20)
 local Notif = require(game.Players.LocalPlayer.PlayerGui.Main.MainClient.NotifModule)
 Notif.Notify("Current Chakra: ".." "..game:GetService("Players").LocalPlayer.PlayerGui.Main.Category.Frames.Stats.Container.Stats.Chakra.Current.Stat.Text)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-288.779602, -311.512634, 613.309143, -0.151631951, 8.70668089e-08, 0.988436997, 2.0647688e-08, 1, -8.49178647e-08, -0.988436997, 7.53267759e-09, -0.151631951)
@@ -175,8 +188,8 @@ wait(.5)
 end
 end
 else
-while _G.loop == true do wait()
-_G.loop = false
+while _G.loop1 == true do wait()
+_G.loop1 = false
 end
 end
 end)
